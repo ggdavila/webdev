@@ -25,31 +25,27 @@
   padding-right: 75px;
   padding-left: 75px;
   position: relative; }
-
-.topnav a {
-  margin-right: auto;
-  color: #414141;
-  opacity: 0.5;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px; }
-
-.topnav a:hover {
-  background-color: transparent;
-  color: #414141;
-  opacity: 1.0; }
-
-.topnav a.active {
-  background-color: transparent;
-  color: #414141;
-  opacity: 1.0; }
-
-.topnav-right {
-  margin-right: 0;
-  display: block;
-  text-align: right !important;
-  align-content: right;
-  float: right; }
+  .topnav a {
+    margin-right: auto;
+    color: #414141;
+    opacity: 0.5;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px; }
+    .topnav a:hover {
+      background-color: transparent;
+      color: #414141;
+      opacity: 1.0; }
+    .topnav a.active {
+      background-color: transparent;
+      color: #414141;
+      opacity: 1.0; }
+  .topnav-right {
+    margin-right: 0;
+    display: block;
+    text-align: right !important;
+    align-content: right;
+    float: right; }
 
 /* Nav/Project Style */
 .projNav {
@@ -61,25 +57,22 @@
   padding-top: 42px;
   padding-right: 75px;
   padding-left: 75px; }
-
-.projNav a {
-  float: left;
-  color: #121212;
-  opacity: 0.5;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 48px; }
-
-.projNav a:hover {
-  background-color: transparent;
-  color: #121212;
-  opacity: 1.0; }
-
-.projNav a.active {
-  background-color: transparent;
-  color: #121212;
-  opacity: 1.0; }
+  .projNav a {
+    float: left;
+    color: #121212;
+    opacity: 0.5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 48px; }
+    .projNav a:hover {
+      background-color: transparent;
+      color: #121212;
+      opacity: 1.0; }
+    .projNav a.active {
+      background-color: transparent;
+      color: #121212;
+      opacity: 1.0; }
 
 /* Projects Card */
 .projectCard {
@@ -92,47 +85,41 @@
   width: 1184px;
   height: 550px;
   align-items: center; }
-
-.projectCard h2 {
-  font-family: 'Vensfolk', serif;
-  font-size: 32px;
-  color: #121212;
-  opacity: 1.0;
-  letter-spacing: 1px;
-  margin: 10px 0; }
-
-.projectCard p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: #414141;
-  opacity: 1.0; }
-
-.projectCardTitle {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.projectCardImage {
-  padding: 30px;
-  position: relative; }
-
-.projectCard img {
-  height: auto;
-  width: 550px;
-  border-radius: 24px; }
-
-.projectCard button {
-  background-color: #485bff;
-  border: 0;
-  border-radius: 50px;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  padding: 12px;
-  width: 150px;
-  height: 44px;
-  letter-spacing: 1px; }
+  .projectCard h2 {
+    font-family: 'Vensfolk', serif;
+    font-size: 32px;
+    color: #121212;
+    opacity: 1.0;
+    letter-spacing: 1px;
+    margin: 10px 0; }
+  .projectCard p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #414141;
+    opacity: 1.0; }
+  .projectCardTitle {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .projectCardImage {
+    padding: 30px;
+    position: relative; }
+  .projectCard img {
+    height: auto;
+    width: 550px;
+    border-radius: 24px; }
+  .projectCard button {
+    background-color: #485bff;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 12px;
+    width: 150px;
+    height: 44px;
+    letter-spacing: 1px; }
 
 /* Footer Style */
 .footerContainer {
@@ -147,30 +134,26 @@
   padding-top: 200px;
   font-size: 16px;
   position: relative; }
-
-.footerContainer-left {
-  flex: 50%; }
-
-.footerContainer-right {
-  flex: 50%;
-  margin-right: 0;
-  display: block;
-  justify-content: right !important;
-  align-content: right;
-  float: right;
-  text-align: right; }
-
-.footerContainer a {
-  margin-right: auto;
-  color: #414141;
-  opacity: 0.5;
-  padding: 14px 16px;
-  text-decoration: none; }
-
-.footerContainer a:hover {
-  background-color: transparent;
-  color: #414141;
-  opacity: 1.0; }
+  .footerContainer-left {
+    flex: 50%; }
+  .footerContainer-right {
+    flex: 50%;
+    margin-right: 0;
+    display: block;
+    justify-content: right !important;
+    align-content: right;
+    float: right;
+    text-align: right; }
+  .footerContainer a {
+    margin-right: auto;
+    color: #414141;
+    opacity: 0.5;
+    padding: 14px 16px;
+    text-decoration: none; }
+    .footerContainer a:hover {
+      background-color: transparent;
+      color: #414141;
+      opacity: 1.0; }
 
 /* Paragraph Styles */
 h1 {
@@ -221,23 +204,23 @@ footer {
     padding-top: 24px;
     padding-right: 0px;
     padding-left: 0px; }
-  .topnav a {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    float: left;
-    color: #414141;
-    opacity: 0.5;
-    text-align: center;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-size: 14px; }
-  .topnav a.active {
-    background-color: transparent;
-    color: #414141;
-    opacity: 1.0; }
-  .topnav-right {
-    float: right; }
+    .topnav a {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      float: left;
+      color: #414141;
+      opacity: 0.5;
+      text-align: center;
+      padding: 8px 8px;
+      text-decoration: none;
+      font-size: 14px; }
+      .topnav a.active {
+        background-color: transparent;
+        color: #414141;
+        opacity: 1.0; }
+    .topnav-right {
+      float: right; }
   /* Textos */
   h1 {
     font-size: 32px;
@@ -259,9 +242,9 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 0px; }
-  .projNav a {
-    text-align: left;
-    font-size: 24px; }
+    .projNav a {
+      text-align: left;
+      font-size: 24px; }
   .projectCard {
     display: flex;
     flex-direction: column-reverse;
@@ -273,22 +256,22 @@ footer {
     height: auto;
     text-justify: center;
     justify-content: center; }
-  .projectCardImage {
-    padding: 0px;
-    position: relative; }
-  .projectCard img {
-    height: auto;
-    width: 300px;
-    border-radius: 24px; }
-  .projectCard h2 {
-    font-size: 24px;
-    text-align: center; }
-  .projectCard p {
-    font-size: 16px; }
-  .projectCard button {
-    text-align: center;
-    font-size: 12px;
-    width: 110px; }
+    .projectCardImage {
+      padding: 0px;
+      position: relative; }
+    .projectCard img {
+      height: auto;
+      width: 300px;
+      border-radius: 24px; }
+    .projectCard h2 {
+      font-size: 24px;
+      text-align: center; }
+    .projectCard p {
+      font-size: 16px; }
+    .projectCard button {
+      text-align: center;
+      font-size: 12px;
+      width: 110px; }
   /* Footer */
   .footerContainer {
     flex-direction: column;
@@ -297,6 +280,6 @@ footer {
     padding-left: 0px;
     padding-top: 55px;
     text-align: center; }
-  .footerContainer-left {
-    padding-top: 14px;
-    flex: 50%; } }
+    .footerContainer-left {
+      padding-top: 14px;
+      flex: 50%; } }

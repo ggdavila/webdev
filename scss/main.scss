@@ -35,38 +35,37 @@
     padding-right: 75px;
     padding-left: 75px;
     position: relative;
-    
-  }
-  
-  .topnav a {
+
+      a {
       margin-right: auto;
       color: #414141; 
       opacity: 0.5;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 16px;
+
+        &:hover {
+          background-color: transparent;
+          color:#414141; opacity:1.0;
+        }
+
+        &.active {
+          background-color: transparent;
+          color:#414141; 
+          opacity:1.0;
+        }
+      }
+
+      &-right {
+        margin-right: 0;
+        display: block;
+        text-align: right !important;
+       align-content: right;
+      float: right;
+      }
   }
-  
-  .topnav a:hover {
-      background-color: transparent;
-      color:#414141; opacity:1.0;
-  }
-  
-  .topnav a.active {
-     background-color: transparent;
-     color:#414141; 
-     opacity:1.0;
-  }
-  
-  .topnav-right {
-    margin-right: 0;
-    display: block;
-    text-align: right !important;
-    align-content: right;
-    float: right;
-  }
-  
-  
+
+
   /* Nav/Project Style */
   
   .projNav {
@@ -78,89 +77,88 @@
     padding-top: 42px;
     padding-right: 75px;
     padding-left: 75px;
+
+    a {
+      float: left;
+      color: #121212; opacity: 0.5;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 48px;
+
+      &:hover {
+        background-color: transparent;
+        color:#121212; opacity:1.0;
+      }
+
+      &.active {
+        background-color: transparent;
+        color:#121212; opacity:1.0;
+      }
+    }
   }
-  
-  .projNav a {
-    float: left;
-    color: #121212; opacity: 0.5;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 48px;
-  }
-  
-  .projNav a:hover {
-    background-color: transparent;
-    color:#121212; opacity:1.0;
-  }
-  
-  .projNav a.active {
-    background-color: transparent;
-    color:#121212; opacity:1.0;
-  }
-    
-  
+
+
   /* Projects Card */
   
   .projectCard {
       display: flex;
-    flex-direction: row;
+      flex-direction: row;
       max-width: 100%;
       margin-left: 128px;
-    margin-top: 32px;
+      margin-top: 32px;
       overflow: hidden;
       width: 1184px;
-    height: 550px;
-    align-items: center;
+      height: 550px;
+      align-items: center;
+
+      h2 {
+        font-family: 'Vensfolk', serif;
+        font-size: 32px;
+        color:#121212; opacity:1.0;
+        letter-spacing: 1px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color:#414141; opacity:1.0;
+      }
+
+      &Title {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &Image {
+        padding: 30px;
+        position: relative;
+      }
+
+      img {
+        height: auto; 
+        width: 550px;
+        border-radius: 24px;
+      }
+
+      button {
+        background-color: #485bff;
+        border: 0;
+        border-radius: 50px;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        padding: 12px;
+        width: 150px;
+        height: 44px;
+        letter-spacing: 1px;
+      }
   }
-  
-  .projectCard h2 {
-    font-family: 'Vensfolk', serif;
-    font-size: 32px;
-    color:#121212; opacity:1.0;
-      letter-spacing: 1px;
-      margin: 10px 0;
-  }
-  
-  .projectCard p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color:#414141; opacity:1.0;
-  }
-  
-  .projectCardTitle {
-      padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .projectCardImage {
-      padding: 30px;
-      position: relative;
-  
-  }
-  
-  .projectCard img {
-    height: auto; 
-    width: 550px;
-    border-radius: 24px;
-  }
-  
-  .projectCard button {
-      background-color: #485bff;
-      border: 0;
-      border-radius: 50px;
-      color: #fff;
-    font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      padding: 12px;
-      width: 150px;
-    height: 44px;
-      letter-spacing: 1px;
-  }
-  
-  
+
+
   /* Footer Style */
   
   .footerContainer {
@@ -175,40 +173,37 @@
     padding-top: 200px;
     font-size: 16px;
     position: relative;
+
+    &-left {
+      flex: 50%
+    }
+
+    &-right {
+      flex: 50%;
+      margin-right: 0;
+      display: block;
+      justify-content: right !important; 
+      align-content: right;
+      float: right;
+      text-align: right;
+    }
+
+    a {
+      margin-right: auto;
+      color: #414141; 
+      opacity: 0.5;
+      padding: 14px 16px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: transparent;
+        color:#414141; 
+        opacity:1.0;
+      }
+    }
   }
-  
-  .footerContainer-left {
-    flex: 50%
-  }
-  
-  .footerContainer-right {
-    flex: 50%;
-    margin-right: 0;
-    display: block;
-    justify-content: right !important; 
-    align-content: right;
-    float: right;
-    text-align: right;
-  }
-  
-  .footerContainer a {
-    margin-right: auto;
-    color: #414141; 
-    opacity: 0.5;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-  }
-  
-  .footerContainer a:hover {
-    background-color: transparent;
-    color:#414141; 
-    opacity:1.0;
-  }
-  
-  
-  
-  
+
+
   /* Paragraph Styles */
   
   h1 {
@@ -272,30 +267,30 @@
       padding-top: 24px;
       padding-right: 0px;
       padding-left: 0px;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        float: left;
+        color: #414141; opacity: 0.5;
+        text-align: center;
+        padding: 8px 8px;
+        text-decoration: none;
+        font-size: 14px;
+
+        &.active {
+          background-color: transparent;
+        color:#414141; opacity:1.0;
+        }
+      }
+
+      &-right {
+        float: right;
+      }
     }
   
-    .topnav a {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      float: left;
-      color: #414141; opacity: 0.5;
-      text-align: center;
-      padding: 8px 8px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-  
-  .topnav a.active {
-     background-color: transparent;
-     color:#414141; opacity:1.0;
-  }
-  
-  .topnav-right {
-    float: right;
-  }
-  
-  
+    
   /* Textos */
   
   h1 {
@@ -324,13 +319,12 @@
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 0px;
+
+    a {
+      text-align: left;
+      font-size: 24px;
+    }
   }
-  
-  .projNav a {
-    text-align: left;
-    font-size: 24px;
-  }
-  
   
   .projectCard {
       display: flex;
@@ -343,33 +337,32 @@
     height: auto;
     text-justify: center;
     justify-content: center;
-  }
-  
-  .projectCardImage {
+
+    &Image {
       padding: 0px;
       position: relative;
-      
-  }
-  
-  .projectCard img {
-    height: auto;
-    width: 300px; 
-    border-radius: 24px;
-  }
-  
-  .projectCard h2 {
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  .projectCard p {
-    font-size: 16px;
-  }
-  
-  .projectCard button {
-    text-align: center;
+    }
+
+    img {
+      height: auto;
+      width: 300px; 
+      border-radius: 24px;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      text-align: center;
       font-size: 12px;
       width: 110px;
+    }
   }
   
   
@@ -382,13 +375,10 @@
     padding-left:  0px;
     padding-top: 55px;
     text-align: center;
+
+    &-left {
+      padding-top: 14px;
+      flex: 50%
+    }
   }
-  
-  .footerContainer-left {
-    padding-top: 14px;
-    flex: 50%
   }
-  
-  }
-  
-  

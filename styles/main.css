@@ -1,3 +1,4 @@
+/* Estilos Nav */
 /* Fonts */
 @font-face {
   font-family: "Vensfolk";
@@ -156,13 +157,19 @@
       opacity: 1.0; }
 
 /* Paragraph Styles */
-h1 {
+h1, h2, h3 {
   font-family: 'Vensfolk', serif;
   font-size: 300%;
   font-weight: 300;
   padding-top: 100px;
   padding-right: 150px;
   padding-left: 150px; }
+
+h2 {
+  font-size: 200%; }
+
+h3 {
+  font-size: 100%; }
 
 /* Document Styles */
 body {
@@ -222,7 +229,7 @@ footer {
     .topnav-right {
       float: right; }
   /* Textos */
-  h1 {
+  h1, h2, h3 {
     font-size: 32px;
     padding-right: 30px;
     padding-left: 30px;

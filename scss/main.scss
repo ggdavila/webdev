@@ -245,8 +245,9 @@ body {
   padding: 0;
   height: 100vh;
   font-family: 'Montserrat' sans-serif;
-  background-image: radial-gradient(circle, #cfdcb5, #d7debb, #dee1c1, #e5e3c9, #eae6d0, #f2e8d6, #f7eadd, #fbede5, #fef1ef, #fef5f8, #fdfafd, #ffffff);
-  backdrop-filter: blur(10px);
+  background-image: radial-gradient(circle, #d8e0c6, #dde2c9, #e2e3cc, #e7e5d0, #ebe7d4, #f2e9d9, #f7ebdf, #fbede5, #fef1ef, #fef5f8, #fdfafd, #ffffff);
+  backdrop-filter: blur(11.1px);
+  -webkit-backdrop-filter: blur(11.1px)
 }
 
 header {

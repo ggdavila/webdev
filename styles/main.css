@@ -159,11 +159,11 @@
 /* Paragraph Styles */
 h1, h2, h3 {
   font-family: 'Vensfolk', serif;
-  font-size: 350%;
+  font-size: 7vh;
   font-weight: 300;
-  padding-top: 100px;
-  padding-right: 150px;
-  padding-left: 150px; }
+  padding-top: 7%;
+  padding-right: 10%;
+  padding-left: 10%; }
 
 h2 {
   font-size: 200%; }

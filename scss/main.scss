@@ -1,7 +1,13 @@
 /* Estilos Nav */
 $navstyle: (
   fontcolor: #414141,
-  fontsize: 16px
+  fontsize: 16px,
+  opacityActive: 1.0,
+  opacityUnactive: 0.5
+);
+
+$footerstyle: (
+  fontcolor: #6f6f6f,
 );
 
 /* Fonts */
@@ -31,8 +37,7 @@ $navstyle: (
 .topnav {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow: hidden;
   padding-top: 42px;
   padding-right: 75px;
@@ -42,7 +47,7 @@ $navstyle: (
   a {
     margin-right: auto;
     color: map-get($navstyle, fontcolor);
-    opacity: 0.5;
+    opacity: map-get($navstyle, opacityUnactive);
     padding: 14px 16px;
     text-decoration: none;
     font-size: map-get($navstyle, fontsize);
@@ -50,13 +55,13 @@ $navstyle: (
     &:hover {
       background-color: transparent;
       color: map-get($navstyle, fontcolor);
-      opacity: 1.0;
+      opacity: map-get($navstyle, opacityActive);
     }
 
     &.active {
       background-color: transparent;
       color: map-get($navstyle, fontcolor);
-      opacity: 1.0;
+      opacity: map-get($navstyle, opacityActive);
     }
   }
 
@@ -170,11 +175,6 @@ $navstyle: (
 
 /* Footer Style */
 
-@mixin footerPadding {
-  padding-right: 75px;
-  padding-left: 75px;
-  padding-top: 200px;
-}
 
 .footerContainer {
   display: flex;
@@ -183,7 +183,9 @@ $navstyle: (
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
   bottom: 0;
-  @include footerPadding;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-top: 200px;
   font-size: 16px;
   position: relative;
 
@@ -203,7 +205,7 @@ $navstyle: (
 
   a {
     margin-right: auto;
-    color: #414141;
+    color: map-get($footerstyle, fontcolor);
     opacity: 0.5;
     padding: 14px 16px;
     text-decoration: none;
@@ -241,9 +243,9 @@ h3 {
 /* Document Styles */
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Montserrat' sans-serif;
   background-image: radial-gradient(circle, #e4e9d9, #e7eada, #eaebdc, #edecde, #f0ede0, #f5eee3, #f9efe7, #fcf1ec, #fef4f3, #fef8f9, #fdfbfd, #ffffff);
   backdrop-filter: blur(11.1px);
@@ -256,10 +258,7 @@ header {
 }
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  margin-top: auto;
   padding: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 200%;
@@ -276,8 +275,23 @@ footer {
 }
 
 .mainIndex {
-  height: 70%;
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 0px;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive */
@@ -328,15 +342,7 @@ footer {
     text-align: center;
   }
 
-  body {
-    position: relative;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 0px;
-    padding-bottom: 6rem;
-    min-height: 100%;
 
-  }
 
   /* Nav/Project Style */
 

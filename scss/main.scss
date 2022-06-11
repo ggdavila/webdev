@@ -8,9 +8,21 @@ $navstyle: (
 
 $footerstyle: (
   fontcolor: #6f6f6f,
+  opacityActive: 1.0,
+  opacityUnactive: 0.5
 );
 
+$projnavstyle: (
+  fontcolor: #121212,
+  opacityActive: 1.0,
+  opacityUnactive: 0.5
+);
+
+$projcardstyle: (
+  width: 100%
+);
 /* Fonts */
+
 @font-face {
   font-family: "Vensfolk";
   src: url(../assets/fonts/VensfolkRegular.ttf);
@@ -26,10 +38,7 @@ $footerstyle: (
   font-weight: 300;
 }
 
-/* Background */
-.backgroundIndex {
-  background-size: contain;
-}
+
 
 
 /* Nav Style */
@@ -37,7 +46,8 @@ $footerstyle: (
 .topnav {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',
+    sans-serif;
   overflow: hidden;
   padding-top: 42px;
   padding-right: 75px;
@@ -83,29 +93,27 @@ $footerstyle: (
   align-items: left;
   font-family: 'Vensfolk', sans-serif;
   overflow: hidden;
-  padding-top: 42px;
+  padding-top: 10px;
   padding-right: 75px;
   padding-left: 75px;
 
   a {
     float: left;
-    color: #121212;
-    opacity: 0.5;
+    color: map-get($projnavstyle, fontcolor);
+    opacity: map-get($projnavstyle, opacityUnactive);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 48px;
+    font-size: 44px;
 
     &:hover {
       background-color: transparent;
-      color: #121212;
-      opacity: 1.0;
+      opacity: map-get($projnavstyle, opacityActive);
     }
 
     &.active {
       background-color: transparent;
-      color: #121212;
-      opacity: 1.0;
+      opacity: map-get($projnavstyle, opacityActive);
     }
   }
 }
@@ -116,11 +124,12 @@ $footerstyle: (
 .projectCard {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
   margin-left: 128px;
+  margin-right: 128px;
   margin-top: 32px;
   overflow: hidden;
-  width: 1184px;
+  max-width: 80%;
+  min-width: 25%;
   height: 550px;
   align-items: center;
 
@@ -129,8 +138,6 @@ $footerstyle: (
     font-size: 32px;
     color: #121212;
     opacity: 1.0;
-    letter-spacing: 1px;
-    margin: 10px 0;
   }
 
   p {
@@ -141,7 +148,7 @@ $footerstyle: (
   }
 
   &Title {
-    padding: 30px;
+    padding: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,6 +161,7 @@ $footerstyle: (
 
   img {
     height: auto;
+    justify-content: right;
     width: 550px;
     border-radius: 24px;
   }
@@ -206,14 +214,13 @@ $footerstyle: (
   a {
     margin-right: auto;
     color: map-get($footerstyle, fontcolor);
-    opacity: 0.5;
+    opacity: map-get($footerstyle, opacityUnactive);
     padding: 14px 16px;
     text-decoration: none;
 
     &:hover {
       background-color: transparent;
-      color: #414141;
-      opacity: 1.0;
+      opacity: map-get($footerstyle, opacityActive);
     }
   }
 }
@@ -230,10 +237,6 @@ h1 {
   padding-left: 10%;
 }
 
-h2 {
-  @extend h1;
-  font-size: 200%;
-}
 
 h3 {
   @extend h1;
@@ -249,7 +252,7 @@ body {
   font-family: 'Montserrat' sans-serif;
   background-image: radial-gradient(circle, #e4e9d9, #e7eada, #eaebdc, #edecde, #f0ede0, #f5eee3, #f9efe7, #fcf1ec, #fef4f3, #fef8f9, #fdfbfd, #ffffff);
   backdrop-filter: blur(11.1px);
-  -webkit-backdrop-filter: blur(11.1px)
+  -webkit-backdrop-filter: blur(11.1px);
 }
 
 header {
@@ -261,17 +264,10 @@ footer {
   margin-top: auto;
   padding: 1rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 200%;
   font-size: 16px;
-  color: #6f6f6f;
+  color: map-get($footerstyle, fontcolor);
+  opacity: map-get($footerstyle, opacityUnactive);
   padding: 50px;
-
-}
-
-.backgroundIndex {
-  position: fixed;
-  width: 50%;
-  z-index: -1;
 }
 
 .mainIndex {

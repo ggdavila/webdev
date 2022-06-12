@@ -180,6 +180,51 @@ $projcardstyle: (
   }
 }
 
+/* About Me Card */
+.aboutCard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 58px;
+  margin-left: 128px;
+  margin-right: 128px;
+  overflow: hidden;
+  align-items: center;
+  height: auto;
+  width: 80%;
+
+
+  h2 {
+    font-family: 'Vensfolk', serif;
+    font-size: 48px;
+    color: #121212;
+    opacity: 1.0;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 48px;
+    color: #414141;
+  }
+
+  &Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+  }
+
+  &Image {}
+
+  img {
+    justify-content: right;
+    border-radius: 10%;
+    width: 375px;
+    height: auto;
+    padding-left: 30px;
+  }
+
+}
 
 /* Footer Style */
 

@@ -6,52 +6,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - GG Portfolio</title>
 
-
+    <!--Inicia Favicon-->
     <link rel="shortcut icon" href="../assets/logo/logo.png">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!--Termina Favicon-->
+
+    <!--Inician Links-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!--Terminan Links-->
+
 </head>
 
+
 <body>
-    <header id="header">
-        <!--Inicia Logo-->
-        <a href="../index.html"><img src="../assets/logo/logo.png" alt="logo" width="60"></a>
-        <!--Termina Logo-->
+
+    <!--Inician Header-->
+    <header>
 
         <!--Inicia Nav-->
-        <nav class="header__nav">
-            <a href="./about.html">About Me</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./contact.html">Contact Me</a>
-        </nav>
+        <div class="topnav">
+            <a class="active" href="../index.html"><img class="logo" style="float: left;" src="../assets/logo/logo.png"
+                    alt="logo" width="60:50%"></a>
+            <div class="topnav-right">
+                <a class="active" href="#">About Me</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
         <!--Termina Nav-->
     </header>
+    <!--Termina Header-->
 
+    <!--Empieza Main-->
     <main>
-        <section>
-            <h1>Hi again!</h1>
-            <img src="../assets/pictures/profile_picture.jpg" alt="Profile Picture" width="375">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis turpis sit amet magna ultrices, id
-                congue neque auctor. Praesent semper leo pellentesque ligula posuere, sed molestie ex ultricies.
-                Vestibulum non lacinia neque. Nulla id neque leo. Integer non nulla interdum, sodales nunc in, consequat
-                quam. Phasellus sagittis, magna sit amet pellentesque iaculis, odio tortor blandit enim, in fringilla
-                arcu turpis vel mi. </p>
-        </section>
+        <div class="aboutCard">
+            <div class="aboutCardTitle">
+                <h2>Hi again!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis turpis sit amet magna ultrices,
+                    id
+                    congue neque auctor. Praesent semper leo pellentesque ligula posuere, sed molestie ex ultricies.
+                    Vestibulum non lacinia neque. Nulla id neque leo. Integer non nulla interdum, sodales nunc in,
+                    consequat
+                    quam. Phasellus sagittis, magna sit amet pellentesque iaculis, odio tortor blandit enim, in
+                    fringilla
+                    arcu turpis vel mi.</p>
+            </div>
+            <div class="aboutCardImage">
+                <img src="../assets/pictures/profile_picture.jpg" alt="Profile Picture" width="375">
+            </div>
+        </div>
     </main>
+    <!--Termina Main-->
+
+
 
     <!--Inicia Footer-->
-    <footer>
-        Copyright © 2022 Gabriela Garcia. All rights reserved</footer>
-    <a href="mailto:ggdavila@me.com"><img src="../assets/icons/mail.png" alt="mail" width="20"></a>
-    <a href="https://www.linkedin.com/in/ggdavila44/" target="_blank"><img src="./assets/icons/linkedin.png"
-            alt="linkedin" width="20"></a>
-    <a href="https://www.behance.net/ggdavila" target="_blank"><img src="../assets/icons/behance.png" alt="behance"
-            width="20"></a>
-    <a href="https://dribbble.com/ggdavila" target="_blank"><img src="../assets/icons/dribbble.png" alt="dribbble"
-            width="20"></a>
-    <a href="https://twitter.com/gabbyuxui" target="_blank"><img src="../assets/icons/twitter.png" alt="twitter"
-            width="20"></a>
+    <footer class="footerContainer">
+        <div class="footerContainer-right">
+            <a href="mailto:ggdavila@me.com"><img src="../assets/icons/mail.png" alt="mail" width="20:50%"></a>
+            <a href="https://www.linkedin.com/in/ggdavila44/" target="_blank"><img src="../assets/icons/linkedin.png"
+                    alt="linkedin" width="20:50%"></a>
+            <a href="https://www.behance.net/ggdavila" target="_blank"><img src="../assets/icons/behance.png"
+                    alt="behance" width="20:50%"></a>
+            <a href="https://dribbble.com/ggdavila" target="_blank"><img src="../assets/icons/dribbble.png"
+                    alt="dribbble" width="20:50%"></a>
+            <a href="https://twitter.com/gabbyuxui" target="_blank"><img src="../assets/icons/twitter.png" alt="twitter"
+                    width="20:50%"></a>
+        </div>
+        <div class="footerContainer-left">
+            Copyright © 2022 Gabriela Garcia. All rights reserved.
+        </div>
     </footer>
     <!--Termina Footer-->
 

@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projects</title>
-        <link rel="shortcut icon" href="../assets/logo/logo.png">
-        <link rel="stylesheet" href="../pages/styles/styles.css">
-    </head>
-    <body>
-        <header id="header">
-             <!--Inicia Logo-->
-             <a href="../index.html"><img src="../assets/logo/logo.png" alt="logo" width="60"></a>
-             <!--Termina Logo-->
-    
-            <!--Inicia Nav-->
-            <nav class="header__nav">
-                <a href="./about.html">About Me</a>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - GG Portfolio</title>
+
+    <!--Inicia Favicon-->
+    <link rel="shortcut icon" href="../assets/logo/logo.png">
+    <!--Termina Favicon-->
+
+    <!--Inician Links-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!--Terminan Links-->
+
+</head>
+
+
+<body>
+
+    <!--Inician Header-->
+    <header>
+
+        <!--Inicia Nav-->
+        <div class="topnav">
+            <a class="active" href="../index.html"><img class="logo" style="float: left;" src="../assets/logo/logo.png"
+                    alt="logo" width="60:50%"></a>
+            <div class="topnav-right">
+                <a class="active" href="./about.html">About Me</a>
                 <a href="./projects.html">Projects</a>
-                <a href="./contact.html">Contact Me</a>
-             </nav>
+                <a class="active" href="#">Contact</a>
+            </div>
+        </div>
         <!--Termina Nav-->
-            </header>
+    </header>
+    <!--Termina Header-->
 
-        <h1>I'd love to hear from you!</h1>
+    <!--Empieza Main-->
     <main>
-        <section>
-            <form action="" method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>Contact Me</legend>
-                    
-                    <div>
-                        <label for="">FIRST NAME</label>
-                        <input type="text" placeholder="Enter your first name">
-                        <label for="">LAST NAME</label>
-                        <input type="text" placeholder="Enter your last name">
+        <div class="contactCard">
+            <div class="contactCardBody">
+                <div class="contactCardBodyItemLeft">
+                    <div class="contactCardTitle">
+                        <span>I'd love to hear</span>
+                        <span>from you!</span>
                     </div>
-                    <br>
-                    <div>
-                        <label for="">EMAIL</label>
-                        <input type="email" placeholder="Enter your email">
-                        <label for="">PHONE NUMBER</label>
-                        <input type="number" placeholder="Enter your phone number">
+                    <div class="contactCardBodyItem">
+                        <div class="contactCardForm">
+                            <div class="contactCardFormGroup">
+                                <input class="contactCardFormControl" type="text" placeholder="FIRST NAME">
+                                <input class="contactCardFormControl" type="text" placeholder="LAST NAME">
+                            </div>
+                            <div class="contactCardFormGroup">
+                                <input class="contactCardFormControl" type="email" placeholder="EMAIL">
+                                <input class="contactCardFormControl" type="number" placeholder="PHONE NUMBER">
+                            </div>
+                            <div class="contactCardFormGroup">
+                                <input class="contactCardFormControl" type="text" placeholder="MESSAGE">
+                            </div>
+                            <div>
+                                <button>SUBMIT</button>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <div>
-                        <label for="">MESSAGE</label>
-                        <input type="text" placeholder="Enter your message">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" value="Submit">
-                    </div>
-                    <br>
-                    <br>
-                    <p>EMAIL ME</p>
-                    <p>ggdavila@me.com</p>
-                </fieldset>
+                </div>
+            </div>
+        </div>
 
-            </form>
-        </section>
-    </main> 
-    <br><br>
+    </main>
+    <!--Termina Main-->
+
     <!--Inicia Footer-->
-        <footer>
-            Copyright © 2022 Gabriela Garcia. All rights reserved</footer>
-            <a href="mailto:ggdavila@me.com"><img src="../assets/icons/mail.png" alt="mail" width="20"></a>
-            <a href="https://www.linkedin.com/in/ggdavila44/" target="_blank"><img src="../assets/icons/linkedin.png" alt="linkedin" width="20"></a>
-            <a href="https://www.behance.net/ggdavila" target="_blank"><img src="../assets/icons/behance.png" alt="behance" width="20"></a>
-            <a href="https://dribbble.com/ggdavila" target="_blank"><img src="../assets/icons/dribbble.png" alt="dribbble" width="20"></a>
-            <a href="https://twitter.com/gabbyuxui" target="_blank"><img src="../assets/icons/twitter.png" alt="twitter" width="20"></a>
-        </footer>
-        <!--Termina Footer-->
-    
+    <footer class="footerContainer">
+        <div class="footerContainer-right">
+            <a href="mailto:ggdavila@me.com"><img src="../assets/icons/mail.png" alt="mail" width="20:50%"></a>
+            <a href="https://www.linkedin.com/in/ggdavila44/" target="_blank"><img src="../assets/icons/linkedin.png"
+                    alt="linkedin" width="20:50%"></a>
+            <a href="https://www.behance.net/ggdavila" target="_blank"><img src="../assets/icons/behance.png"
+                    alt="behance" width="20:50%"></a>
+            <a href="https://dribbble.com/ggdavila" target="_blank"><img src="../assets/icons/dribbble.png"
+                    alt="dribbble" width="20:50%"></a>
+            <a href="https://twitter.com/gabbyuxui" target="_blank"><img src="../assets/icons/twitter.png" alt="twitter"
+                    width="20:50%"></a>
+        </div>
+        <div class="footerContainer-left">
+            Copyright © 2022 Gabriela Garcia. All rights reserved.
+        </div>
+    </footer>
+    <!--Termina Footer-->
+
 </body>
+
 </html>

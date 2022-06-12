@@ -96,6 +96,7 @@ $projcardstyle: (
   padding-top: 10px;
   padding-right: 75px;
   padding-left: 75px;
+  box-sizing: border-box;
 
   a {
     float: left;
@@ -105,6 +106,9 @@ $projcardstyle: (
     padding: 14px 16px;
     text-decoration: none;
     font-size: 44px;
+    flex-flow: column;
+
+
 
     &:hover {
       background-color: transparent;
@@ -184,13 +188,17 @@ $projcardstyle: (
 .aboutCard {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
+  position: relative;
   margin-top: 58px;
   margin-left: 128px;
   margin-right: 128px;
   overflow: hidden;
   align-items: center;
-  height: auto;
-  width: 80%;
+  height: 550px;
+  width: 85%;
+  padding-bottom: 0px;
+
 
 
   h2 {
@@ -202,8 +210,8 @@ $projcardstyle: (
 
   p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 36px;
     color: #414141;
   }
 
@@ -214,17 +222,110 @@ $projcardstyle: (
     padding-right: 60px;
   }
 
-  &Image {}
+  &Image {
+    align-items: right;
+    display: block;
+    float: right;
+  }
 
   img {
     justify-content: right;
-    border-radius: 10%;
     width: 375px;
     height: auto;
     padding-left: 30px;
   }
 
 }
+
+
+/* Contact Me Card */
+
+.contactCard {
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  &Body {
+    display: flex;
+
+    &Item {
+      flex: 1;
+      padding: 50px;
+
+      &Left {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &Title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #414141;
+    font-size: 48px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 25px;
+      height: 4px;
+    }
+  }
+
+  h2 {
+    font-family: 'Vensfolk', serif;
+    font-size: 32px;
+    color: #121212;
+    opacity: 1.0;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #414141;
+    opacity: 1.0;
+  }
+
+  &Title {
+    padding: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &Form {
+    padding: 30px;
+    position: relative;
+  }
+
+  button {
+    background-color: #2A2A2A;
+    border: 0;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 12px;
+    width: 150px;
+    height: 44px;
+    letter-spacing: 1px;
+  }
+}
+
 
 /* Footer Style */
 
@@ -290,15 +391,7 @@ h3 {
 
 /* Document Styles */
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Montserrat' sans-serif;
-  background-image: radial-gradient(circle, #e4e9d9, #e7eada, #eaebdc, #edecde, #f0ede0, #f5eee3, #f9efe7, #fcf1ec, #fef4f3, #fef8f9, #fdfbfd, #ffffff);
-  backdrop-filter: blur(11.1px);
-  -webkit-backdrop-filter: blur(11.1px);
-}
+body {}
 
 header {
   width: 100%;
@@ -324,6 +417,16 @@ footer {
   min-height: 100%;
 }
 
+.bodybackground {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat' sans-serif;
+  background-image: radial-gradient(circle, #e4e9d9, #e7eada, #eaebdc, #edecde, #f0ede0, #f5eee3, #f9efe7, #fcf1ec, #fef4f3, #fef8f9, #fdfbfd, #ffffff);
+  backdrop-filter: blur(11.1px);
+  -webkit-backdrop-filter: blur(11.1px);
+
+}
 
 
 

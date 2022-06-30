@@ -159,16 +159,66 @@
 
 /* Contact Me Card */
 .contactCard {
-  position: relative; }
-  .contactCard:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    z-index: -1; }
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  align-items: baseline;
+  margin-top: 25px;
+  margin-left: 125px;
+  margin-right: 128px;
+  height: 550px;
+  width: 1260px;
+  padding-bottom: 0px; }
+  .contactCardTitle {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    color: #414141;
+    font-size: 48px;
+    width: 477px;
+    position: relative; }
+  .contactCardForm {
+    width: 100%;
+    margin-left: 125px;
+    margin-right: 125px;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #414141;
+    font-size: 14px;
+    outline: none; }
+    .contactCardFormData {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline; }
+      .contactCardFormDataInput {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+  .contactCard .label {
+    color: #414141;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif; }
+  .contactCard .input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #414141;
+    opacity: 0.8;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+    border-radius: 0px;
+    font-family: 'Montserrat', sans-serif; }
+    .contactCard .input:focus {
+      color: #414141; }
+  .contactCard h2 {
+    font-family: 'Vensfolk', serif;
+    font-size: 48px;
+    color: #121212;
+    opacity: 1.0; }
   .contactCardBody {
     display: flex; }
     .contactCardBodyItem {
@@ -177,20 +227,6 @@
       .contactCardBodyItemLeft {
         display: flex;
         flex-direction: column; }
-  .contactCardTitle {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color: #414141;
-    font-size: 48px; }
-    .contactCardTitle:after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-      width: 25px;
-      height: 4px; }
   .contactCard h2 {
     font-family: 'Vensfolk', serif;
     font-size: 32px;

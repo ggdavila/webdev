@@ -204,7 +204,8 @@
       color: #121212;
       opacity: 0.8;
       width: 100%;
-      max-width: 680px; }
+      max-width: 680px;
+      text-align: justify; }
 
 /* About Me Card */
 .aboutCard {

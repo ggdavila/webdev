@@ -38,9 +38,6 @@ $projcardstyle: (
   font-weight: 300;
 }
 
-
-
-
 /* Nav Style */
 
 .topnav {
@@ -73,6 +70,7 @@ $projcardstyle: (
       opacity: map-get($navstyle, opacityActive);
     }
   }
+
 
   &-right {
     margin-right: 0;
@@ -112,14 +110,12 @@ $projcardstyle: (
       opacity: map-get($projnavstyle, opacityActive);
     }
 
-
     &.active {
       background-color: transparent;
       opacity: map-get($projnavstyle, opacityActive);
     }
   }
 }
-
 
 /* Projects Card */
 
@@ -141,6 +137,8 @@ $projcardstyle: (
     color: #121212;
     opacity: 1.0;
   }
+
+
 
   p {
     font-family: 'Montserrat', sans-serif;
@@ -182,7 +180,139 @@ $projcardstyle: (
   }
 }
 
+/* Project 1 */
+
+.backarrow {
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
+.projectAll {
+  display: flex;
+  flex-direction: row;
+  margin-left: 128px;
+  margin-right: 128px;
+  margin-top: 32px;
+  overflow: hidden;
+  max-width: 80%;
+  min-width: 25%;
+  height: auto;
+
+  h2 {
+    font-family: 'Vensfolk', sans-serif;
+    font-size: 40px;
+    color: #121212
+  }
+
+  &Title {
+    padding: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+
+  &Date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #414141;
+  }
+
+  &MoreProjects {
+    padding-top: 205px;
+
+    &Title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #717171;
+      text-transform: capitalize;
+    }
+
+    a {
+      font-family: 'Vensfolk', serif;
+      font-size: 18px;
+      color: #414141;
+      text-decoration: none;
+
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+
+  }
+}
+
+.projectInfo {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  padding-top: 10px;
+  position: relative;
+  width: 60%;
+
+  a {
+    align-items: baseline;
+    color: #485bff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+
+
+  &Right {
+    margin-right: auto;
+    display: block;
+    text-align: right !important;
+    align-content: right;
+    float: right;
+  }
+
+  &Image {
+    padding: 30px;
+    position: relative;
+
+    img {
+      width: 100%;
+      max-width: 680px;
+      height: auto;
+    }
+
+    figcaption {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: #717171;
+    }
+
+    h4 {
+      font-family: 'Vensfolk', serif;
+      font-size: 24px;
+      color: #121212;
+      opacity: 0.8;
+    }
+
+    .pProject {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      color: #121212;
+      opacity: 0.8;
+      width: 100%;
+      max-width: 680px;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
 /* About Me Card */
+
 .aboutCard {
   display: flex;
   flex-direction: row;
@@ -196,8 +326,6 @@ $projcardstyle: (
   height: 550px;
   width: 85%;
   padding-bottom: 0px;
-
-
 
   h2 {
     font-family: 'Vensfolk', serif;
@@ -232,9 +360,7 @@ $projcardstyle: (
     height: auto;
     padding-left: 30px;
   }
-
 }
-
 
 /* Contact Me Card */
 
@@ -247,9 +373,10 @@ $projcardstyle: (
   margin-top: 25px;
   margin-left: 125px;
   margin-right: 128px;
-  height: 550px;
+  height: auto;
   width: 1260px;
   padding-bottom: 0px;
+  align-self: center;
 
   &Title {
     display: flex;
@@ -257,14 +384,12 @@ $projcardstyle: (
     flex-direction: column;
     color: #414141;
     font-size: 48px;
-    width: 477px;
+    width: 650px;
     position: relative;
+
   }
 
-
   &Form {
-
-
     width: 100%;
     margin-left: 125px;
     margin-right: 125px;
@@ -285,7 +410,6 @@ $projcardstyle: (
         display: flex;
         flex-direction: column;
         width: 100%;
-
       }
     }
   }
@@ -294,6 +418,13 @@ $projcardstyle: (
     color: #414141;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+
+    &opacity {
+      color: #414141;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      opacity: 0.75;
+    }
   }
 
   .input {
@@ -302,31 +433,40 @@ $projcardstyle: (
     border-bottom: 1px solid #666;
     color: #414141;
     opacity: 0.8;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     transition: border-color .2s;
     border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
+    padding-top: 5px;
 
     &:focus {
       color: #414141;
     }
   }
 
-  h2 {
+  .titleContactLeft {
     font-family: 'Vensfolk', serif;
-    font-size: 48px;
-    color: #121212;
+    font-size: 40px;
+    color: #414141;
     opacity: 1.0;
+    text-align: right;
   }
 
+  .titleContactRight {
+    font-family: 'Vensfolk', serif;
+    font-size: 48px;
+    color: #414141;
+    opacity: 1.0;
+    text-align: left;
+  }
 
-
-
-
-
-
-
+  .pEmail {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #414141;
+    padding-top: 0px;
+  }
 
   &Body {
     display: flex;
@@ -341,8 +481,6 @@ $projcardstyle: (
       }
     }
   }
-
-
 
   h2 {
     font-family: 'Vensfolk', serif;
@@ -384,10 +522,7 @@ $projcardstyle: (
   }
 }
 
-
-
 /* Footer Style */
-
 
 .footerContainer {
   display: flex;
@@ -430,7 +565,6 @@ $projcardstyle: (
   }
 }
 
-
 /* Paragraph Styles */
 
 h1 {
@@ -442,15 +576,12 @@ h1 {
   padding-left: 10%;
 }
 
-
 h3 {
   @extend h1;
   font-size: 100%;
 }
 
 /* Document Styles */
-
-
 
 header {
   width: 100%;
@@ -534,7 +665,6 @@ footer {
     }
   }
 
-
   /* Textos */
 
   h1 {
@@ -544,8 +674,6 @@ footer {
     padding-top: 54px;
     text-align: center;
   }
-
-
 
   /* Nav/Project Style */
 

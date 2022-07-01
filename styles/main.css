@@ -118,6 +118,94 @@
     height: 44px;
     letter-spacing: 1px; }
 
+/* Project 1 */
+.backarrow {
+  padding-left: 100px;
+  padding-top: 25px; }
+
+.projectAll {
+  display: flex;
+  flex-direction: row;
+  margin-left: 128px;
+  margin-right: 128px;
+  margin-top: 32px;
+  overflow: hidden;
+  max-width: 80%;
+  min-width: 25%;
+  height: auto; }
+  .projectAll h2 {
+    font-family: 'Vensfolk', sans-serif;
+    font-size: 40px;
+    color: #121212; }
+  .projectAllTitle {
+    padding: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%; }
+  .projectAllDate {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #414141; }
+  .projectAllMoreProjects {
+    padding-top: 205px; }
+    .projectAllMoreProjectsTitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #717171;
+      text-transform: capitalize; }
+    .projectAllMoreProjects a {
+      font-family: 'Vensfolk', serif;
+      font-size: 18px;
+      color: #414141;
+      text-decoration: none; }
+      .projectAllMoreProjects a:hover {
+        background-color: transparent;
+        text-decoration: underline; }
+
+.projectInfo {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  padding-top: 10px;
+  position: relative;
+  width: 60%; }
+  .projectInfo a {
+    align-items: baseline;
+    color: #485bff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none; }
+  .projectInfoRight {
+    margin-right: auto;
+    display: block;
+    text-align: right !important;
+    align-content: right;
+    float: right; }
+  .projectInfoImage {
+    padding: 30px;
+    position: relative; }
+    .projectInfoImage img {
+      width: 100%;
+      max-width: 680px;
+      height: auto; }
+    .projectInfoImage figcaption {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: #717171; }
+    .projectInfoImage h4 {
+      font-family: 'Vensfolk', serif;
+      font-size: 24px;
+      color: #121212;
+      opacity: 0.8; }
+    .projectInfoImage .pProject {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      color: #121212;
+      opacity: 0.8;
+      width: 100%;
+      max-width: 680px; }
+
 /* About Me Card */
 .aboutCard {
   display: flex;
@@ -167,16 +255,17 @@
   margin-top: 25px;
   margin-left: 125px;
   margin-right: 128px;
-  height: 550px;
+  height: auto;
   width: 1260px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  align-self: center; }
   .contactCardTitle {
     display: flex;
     align-self: center;
     flex-direction: column;
     color: #414141;
     font-size: 48px;
-    width: 477px;
+    width: 650px;
     position: relative; }
   .contactCardForm {
     width: 100%;
@@ -201,24 +290,42 @@
     color: #414141;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif; }
+    .contactCard .labelopacity {
+      color: #414141;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      opacity: 0.75; }
   .contactCard .input {
     background: none;
     border: none;
     border-bottom: 1px solid #666;
     color: #414141;
     opacity: 0.8;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     transition: border-color .2s;
     border-radius: 0px;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5px; }
     .contactCard .input:focus {
       color: #414141; }
-  .contactCard h2 {
+  .contactCard .titleContactLeft {
+    font-family: 'Vensfolk', serif;
+    font-size: 40px;
+    color: #414141;
+    opacity: 1.0;
+    text-align: right; }
+  .contactCard .titleContactRight {
     font-family: 'Vensfolk', serif;
     font-size: 48px;
-    color: #121212;
-    opacity: 1.0; }
+    color: #414141;
+    opacity: 1.0;
+    text-align: left; }
+  .contactCard .pEmail {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #414141;
+    padding-top: 0px; }
   .contactCardBody {
     display: flex; }
     .contactCardBodyItem {

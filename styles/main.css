@@ -301,7 +301,7 @@
     border: none;
     border-bottom: 1px solid #666;
     color: #414141;
-    opacity: 0.8;
+    opacity: 0.75;
     font-size: 16px;
     outline: none;
     transition: border-color .2s;
@@ -309,7 +309,8 @@
     font-family: 'Montserrat', sans-serif;
     padding-top: 5px; }
     .contactCard .input:focus {
-      color: #414141; }
+      color: #414141;
+      opacity: 1.0; }
   .contactCard .titleContactLeft {
     font-family: 'Vensfolk', serif;
     font-size: 40px;
@@ -443,12 +444,16 @@ footer {
 
 /* Responsive */
 @media only screen and (max-width: 700px) {
+  body {
+    width: 100vw;
+    margin-right: 0px;
+    margin-left: 0px; }
   /* Top Nav */
   .topnav {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     padding-top: 24px;
-    padding-right: 0px;
+    padding-right: 25px;
     padding-left: 0px; }
     .topnav a {
       display: flex;
@@ -484,17 +489,47 @@ footer {
     .projNav a {
       text-align: left;
       font-size: 24px; }
+  /* About Me */
+  .aboutCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+    height: auto; }
+    .aboutCard h2 {
+      font-size: 32px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 0px;
+      text-align: center; }
+    .aboutCard p {
+      font-size: 18px;
+      line-height: 28px;
+      padding-left: 25px;
+      padding-right: 0px;
+      text-align: justify; }
+    .aboutCard img {
+      width: 100%;
+      height: auto;
+      padding-left: 0px;
+      padding-right: 0px; }
+  /* Projects */
   .projectCard {
     display: flex;
     flex-direction: column-reverse;
     max-width: 100%;
     margin-left: 0px;
+    margin-right: 0px;
     padding-top: 24px;
     overflow: hidden;
     width: 375px;
     height: auto;
     text-justify: center;
     justify-content: center; }
+    .projectCardTitle {
+      align-items: center; }
     .projectCardImage {
       padding: 0px;
       position: relative; }
@@ -506,11 +541,81 @@ footer {
       font-size: 24px;
       text-align: center; }
     .projectCard p {
-      font-size: 16px; }
+      font-size: 16px;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: justify; }
     .projectCard button {
       text-align: center;
       font-size: 12px;
-      width: 110px; }
+      width: 110px;
+      align-self: center; }
+  /* Project 1 */
+  .backarrow {
+    padding-left: 35px;
+    padding-top: 35px; }
+  .projectAll {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center !important; }
+    .projectAll h2 {
+      font-size: 24px; }
+    .projectAllTitle {
+      width: 100%;
+      margin: auto;
+      padding-right: 25px;
+      padding-left: 0px;
+      justify-content: center; }
+    .projectAllDate {
+      text-align: center;
+      padding-right: 25px;
+      padding-left: 0px;
+      margin: auto; }
+    .projectAllMoreProjects {
+      display: none; }
+  .projectInfo {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw; }
+  Image {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 200px;
+    transform: rotate(40deg); }
+    Image img {
+      height: auto; }
+  /* Contact */
+  .contactCard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 90%;
+    justify-content: center; }
+    .contactCardTitle {
+      width: 100%;
+      justify-content: center; }
+    .contactCard .titleContactLeft {
+      font-size: 32px;
+      padding-left: 25px;
+      width: 90%;
+      padding-right: 0px;
+      text-align: center; }
+    .contactCard .titleContactRight {
+      padding-left: 0px;
+      padding-right: 0px;
+      display: none;
+      width: 90%;
+      justify-content: center; }
+    .contactCardForm {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 90%;
+      align-items: center; }
   /* Footer */
   .footerContainer {
     flex-direction: column;

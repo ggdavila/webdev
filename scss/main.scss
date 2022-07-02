@@ -21,6 +21,8 @@ $projnavstyle: (
 $projcardstyle: (
   width: 100%
 );
+
+
 /* Fonts */
 
 @font-face {
@@ -37,6 +39,7 @@ $projcardstyle: (
   font-family: "Montserrat";
   font-weight: 300;
 }
+
 
 /* Nav Style */
 
@@ -70,7 +73,6 @@ $projcardstyle: (
       opacity: map-get($navstyle, opacityActive);
     }
   }
-
 
   &-right {
     margin-right: 0;
@@ -117,6 +119,7 @@ $projcardstyle: (
   }
 }
 
+
 /* Projects Card */
 
 .projectCard {
@@ -137,8 +140,6 @@ $projcardstyle: (
     color: #121212;
     opacity: 1.0;
   }
-
-
 
   p {
     font-family: 'Montserrat', sans-serif;
@@ -179,6 +180,7 @@ $projcardstyle: (
     letter-spacing: 1px;
   }
 }
+
 
 /* Project 1 */
 
@@ -238,7 +240,6 @@ $projcardstyle: (
         text-decoration: underline;
       }
     }
-
   }
 }
 
@@ -258,8 +259,6 @@ $projcardstyle: (
     font-size: 14px;
     text-decoration: none;
   }
-
-
 
   &Right {
     margin-right: auto;
@@ -302,14 +301,7 @@ $projcardstyle: (
       text-align: justify;
     }
   }
-
-
 }
-
-
-
-
-
 
 
 /* About Me Card */
@@ -362,6 +354,7 @@ $projcardstyle: (
     padding-left: 30px;
   }
 }
+
 
 /* Contact Me Card */
 
@@ -433,7 +426,7 @@ $projcardstyle: (
     border: none;
     border-bottom: 1px solid #666;
     color: #414141;
-    opacity: 0.8;
+    opacity: 0.75;
     font-size: 16px;
     outline: none;
     transition: border-color .2s;
@@ -443,6 +436,7 @@ $projcardstyle: (
 
     &:focus {
       color: #414141;
+      opacity: 1.0;
     }
   }
 
@@ -523,6 +517,7 @@ $projcardstyle: (
   }
 }
 
+
 /* Footer Style */
 
 .footerContainer {
@@ -566,6 +561,7 @@ $projcardstyle: (
   }
 }
 
+
 /* Paragraph Styles */
 
 h1 {
@@ -581,6 +577,7 @@ h3 {
   @extend h1;
   font-size: 100%;
 }
+
 
 /* Document Styles */
 
@@ -633,13 +630,19 @@ footer {
 
 @media only screen and (max-width:700px) {
 
+  body {
+    width: 100vw;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
   /* Top Nav */
 
   .topnav {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     padding-top: 24px;
-    padding-right: 0px;
+    padding-right: 25px;
     padding-left: 0px;
 
     a {
@@ -666,6 +669,7 @@ footer {
     }
   }
 
+
   /* Textos */
 
   h1 {
@@ -691,17 +695,68 @@ footer {
     }
   }
 
+
+  /* About Me */
+
+  .aboutCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+    height: auto;
+
+    h2 {
+      font-size: 32px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 0px;
+      text-align: center;
+
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      padding-left: 25px;
+      padding-right: 0px;
+      text-align: justify;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+
+
+
+
+
+
+
+  /* Projects */
+
   .projectCard {
     display: flex;
     flex-direction: column-reverse;
     max-width: 100%;
     margin-left: 0px;
+    margin-right: 0px;
     padding-top: 24px;
     overflow: hidden;
     width: 375px;
     height: auto;
     text-justify: center;
     justify-content: center;
+
+    &Title {
+      align-items: center;
+    }
 
     &Image {
       padding: 0px;
@@ -721,14 +776,131 @@ footer {
 
     p {
       font-size: 16px;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: justify;
     }
 
     button {
       text-align: center;
       font-size: 12px;
       width: 110px;
+      align-self: center;
     }
   }
+
+
+  /* Project 1 */
+
+  .backarrow {
+    padding-left: 35px;
+    padding-top: 35px;
+  }
+
+  .projectAll {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center !important;
+
+
+    h2 {
+      font-size: 24px;
+    }
+
+    &Title {
+      width: 100%;
+      margin: auto;
+      padding-right: 25px;
+      padding-left: 0px;
+      justify-content: center;
+    }
+
+    &Date {
+      text-align: center;
+      padding-right: 25px;
+      padding-left: 0px;
+      margin: auto;
+    }
+
+    &MoreProjects {
+      display: none;
+    }
+  }
+
+  .projectInfo {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+  }
+
+  &Image {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 200px;
+    transform: rotate(40deg);
+
+    img {
+
+      height: auto;
+    }
+  }
+
+
+
+  /* Contact */
+
+  .contactCard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 90%;
+    justify-content: center;
+
+    &Title {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .titleContactLeft {
+      font-size: 32px;
+      padding-left: 25px;
+      width: 90%;
+      padding-right: 0px;
+      text-align: center;
+    }
+
+    .titleContactRight {
+      padding-left: 0px;
+      padding-right: 0px;
+      display: none;
+      width: 90%;
+      justify-content: center;
+    }
+
+    &Form {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 90%;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* Footer */
@@ -746,4 +918,17 @@ footer {
       flex: 50%
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
